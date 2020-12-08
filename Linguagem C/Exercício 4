@@ -4,7 +4,6 @@
 #pragma warning(disable:4996) //para poder usar scanf
 
 int main() {
-	int numeroLeitor;
 	char* caractere;
 
 	printf("A soma de todos os pares de 50 a 100 eh: ");
