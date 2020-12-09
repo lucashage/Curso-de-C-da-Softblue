@@ -9,7 +9,7 @@ O programa deve entao jogar o valor de y em x e repetir o processo ate que y ten
 
 int main() {
 	int x;
-	char caractere;
+	char *caractere;
 	int y = 0;
 
 	printf("\n Digite o valor de x: ");
