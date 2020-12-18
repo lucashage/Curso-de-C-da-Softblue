@@ -15,7 +15,7 @@ int maior(int vetor[]) {
 	int maiorValor= 0;
 	for (int x = 0; x < 5; x++) {
 		if (maiorValor<vetor[x])
-			vetor[x] = maiorValor;
+			 maiorValor = vetor[x];
 	}
 	return maiorValor;
 }
@@ -24,7 +24,7 @@ int menor(int vetor[]) {
 	int menorValor = 999999999;
 	for (int x = 0; x < 5; x++) {
 		if (menorValor>vetor[x])
-			vetor[x] = menorValor;
+			menorValor = vetor[x];
 	}
 	return menorValor;
 }
@@ -49,11 +49,6 @@ int main(){
 	printf("\nMedia: %.2f", media(vetor));
 	printf("\nMaior: %d", maior(vetor));
 	printf("\nMenor: %d", menor(vetor));
-
-
-	
-
-
 
 	scanf("%c", &caractere);
 	return 0;
