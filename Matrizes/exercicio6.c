@@ -21,7 +21,7 @@ int main() {
 	matriz = (int**)malloc(l * sizeof(int*));
 
 	//Alocando colunas da matriz com malloc
-	for (int i = 0; i < c; i++) {
+	for (int i = 0; i < l; i++) {
 		matriz[i] = (int*)malloc(c * sizeof(int));
 	}
 
@@ -29,7 +29,7 @@ int main() {
 	transposta = (int**)malloc(c * sizeof(int*));
 
 	//Alocando colunas da matriz transposta com malloc
-	for (int i = 0; i < l; i++) {
+	for (int i = 0; i < c; i++) {
 		transposta[i] = (int*)malloc(l * sizeof(int));
 	}
 
@@ -40,8 +40,8 @@ int main() {
 		}
 	}
 
-	for (int i = 0; i < l; i++) {
-		for (int j = 0; j < c; j++) {
+	for (int i = 0; i < c; i++) {
+		for (int j = 0; j < l; j++) {
 			transposta[i][j] = matriz[j][i];
 		}
 	}
@@ -54,9 +54,9 @@ int main() {
 	}
 
 	printf("\n Matriz transposta:");
-	for (int i = 0; i < l; i++) {
+	for (int i = 0; i < c; i++) {
 		printf("\n");
-		for (int j = 0; j < c; j++)
+		for (int j = 0; j < l; j++)
 			printf("%d ", transposta[i][j]);
 	}
 
