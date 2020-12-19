@@ -60,6 +60,9 @@ int main(){
 	imprimeMatriz(matriz);
 	printf("\nMatriz Transposta:\n");
 	imprimeMatriz(matrizTransposta);
+	
+	//free(matriz);
+	//free(matrizTransposta);
 	 	 
 
 	scanf("%c", &caractere);
